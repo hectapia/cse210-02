@@ -33,4 +33,6 @@ root                    (project root folder)
 
 ## Authors
 ---
-* Hector Olivares Tapia (manleym@byui.edu)
+* Hector Olivares Tapia (oli21007@byui.edu)
+* Yves Cyril (cyr21001@byui.edu)
+* Nasandratra Sartin HARIVONJY NIAINA (har21055@byui.edu)
