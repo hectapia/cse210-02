@@ -8,7 +8,6 @@ class Hilo:
    
     Attributes:
         cardNumber (int): The card number.
-        points (int): The number of points the die is worth.
     """
 
     def __init__(self):
@@ -17,7 +16,7 @@ class Hilo:
         Args:
             self (Hilo): An instance of Hilo.
         """
-        self.cardnumber = 0
+        self.cardnumber = 0 # store de data for intearcting with the user
 
     def cardhand(self):
         """Generates a new random value and calculates the points for the dice.

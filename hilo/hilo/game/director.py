@@ -8,8 +8,13 @@ class Director:
 
     Attributes:
 
+        self.card = 0   # keep the card worth generate for Hilo
         is_playing (boolean): Whether or not the game is being played.
-        score (int): The score for one round of play.
+        self.card1= 0 : Card genteradted by Hilo.
+        self.card2= 0 : Predicted card by the user.
+        self.wonPoints : if the prediction of the user ganme is correct.
+        self.lostPoints :  if the prediction of the user ganme is correct.
+        score (int): The score for one round of play. Starts with 300 points.
 
     """
 
@@ -19,8 +24,8 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
-        self.card = 0
-        self.is_playing = True
+        self.card = 0   
+        self.is_playing = True  # 
         self.card1= 0
         self.card2= 0
         self.wonPoints = 100
