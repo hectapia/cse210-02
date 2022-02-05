@@ -73,7 +73,7 @@ class Director:
 
         #The game ends when the score is inferior or equal to 0
         if self.score <= 0:
-            print("=== Game over ====")
+            print("=== Game over ====") # Great!
             self.is_playing = False
             return
 
@@ -81,7 +81,7 @@ class Director:
         
         #if not, the game will end as well
         if not self.is_playing:
-            print("=== Game over ====")
+            print("=== Game over ====") # Great!
             return 
        
     def do_updates(self):
