@@ -83,7 +83,7 @@ class Director:
             self.is_playing = False
             return
 
-        self.is_playing = (input('Do you want to play again? y or n ') == 'y')
+        self.is_playing = (input('Do you want to play again? [y/n]:') == 'y')
         
         #if not, the game will end as well
         if not self.is_playing:

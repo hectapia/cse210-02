@@ -36,3 +36,4 @@ root                    (project root folder)
 * Hector Olivares Tapia (oli21007@byui.edu)
 * Yves Cyril (cyr21001@byui.edu)
 * Nasandratra Sartin HARIVONJY NIAINA (har21055@byui.edu)
+# isn't the hilo game working in python2 ?

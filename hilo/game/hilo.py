@@ -1,5 +1,5 @@
-import random
-
+from random import random
+# this is my collaboration ( Yves)
 class Hilo:
     """Individual cards are represented as a number from 1 to 13..
 
