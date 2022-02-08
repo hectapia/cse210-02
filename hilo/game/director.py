@@ -28,6 +28,7 @@ class Director:
         self.is_playing = True
         self.card1= 0
         self.card2= 0
+        self.swicth_card = 0
         self.wonPoints = 100
         self.lostPoints = 75
         self.score = 300
@@ -51,7 +52,12 @@ class Director:
             self (Director): An instance of Director.
         """
 
-        self.card1 = self.do_updates()
+        # correction after submitting: save the random card value for the next round.
+        if  self.swicth_card == 0 :
+            self.card1 = self.do_updates()
+        else :
+            self.card1 =  self.swicth_card
+            
         print(f"\n--- Your score is --- : {self.score} points\n")
         print(f"*** Your Initial Card is *** : {self.card1}\n")
         
