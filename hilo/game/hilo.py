@@ -1,4 +1,4 @@
-from random import random
+from random import randint
 # this is my collaboration ( Yves)
 class Hilo:
     """Individual cards are represented as a number from 1 to 13..
@@ -24,4 +24,4 @@ class Hilo:
         Args:
             self (Hilo): An instance of Hilo.
         """                                    
-        self.cardnumber = random.randint(1, 13)   
+        self.cardnumber = randint(1, 13)   
