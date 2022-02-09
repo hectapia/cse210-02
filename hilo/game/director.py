@@ -28,7 +28,6 @@ class Director:
         self.is_playing = True
         self.card1= 0
         self.card2= 0
-        self.swicth_card = 0
         self.wonPoints = 100
         self.lostPoints = 75
         self.score = 300
@@ -39,11 +38,13 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
+        self.card1 = self.do_updates()
         while self.is_playing:
             self.get_inputs()
             self.do_updates()
+            # save the random card value for the next round.
+            self.card1 =self.card2
             
-
     
     def get_inputs(self):
         """Ask the user if they want to roll.
@@ -51,13 +52,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-
-        # correction after submitting: save the random card value for the next round.
-        if  self.swicth_card == 0 :
-            self.card1 = self.do_updates()
-        else :
-            self.card1 =  self.swicth_card
-            
+  
         print(f"\n--- Your score is --- : {self.score} points\n")
         print(f"*** Your Initial Card is *** : {self.card1}\n")
         
@@ -71,6 +66,9 @@ class Director:
         elif card_hand == 'l' and self.card2 < self.card1 :
             self.score += self.wonPoints
             print(f"    Yes, it was lower, You won 100 points    \n")
+        #if the self.card1 = self.card2 , the score don't change
+        elif self.card1 == self.card2:
+            self.score = self.score
         else:    
             self.score -= self.lostPoints  
             print(f"    Ouch!, You lose 75 points!    \n")
